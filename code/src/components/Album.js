@@ -4,6 +4,7 @@ import './Album.css';
 import { Icons } from 'components/Icons';
 
 export const Album = (props) => {
+  console.log(props.artists)
   return (
     <article className="albumcontainer">
       <div className="imgcontainer">
