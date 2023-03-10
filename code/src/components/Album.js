@@ -1,19 +1,27 @@
-import React from 'react'
+import React from 'react';
+import { Artist } from 'components/Artist';
+import './Album.css';
+import { Icons } from 'components/Icons';
 
-const Album = ({ image, albumname, artistname, albumurl, artisturl }) => {
+export const Album = (props) => {
   return (
-    <article className="albumcontainer">
-      <a href={albumurl}>
-        <img className="album-img" src={image} alt="Album Cover" />
-      </a>
-      <a href={albumurl}>
-        <div className="albumname">{albumname}</div>
-      </a>
-      <a href={artisturl}>
-        <div className="artistname">{artistname}</div>
-      </a>
-    </article>
+    <div className="wrapper">
+      <article className="albumcontainer">
+        <a href={props.albumurl}>
+          <img className="album-img" src={props.image} alt="Album Cover" />
+          <Icons />
+        </a>
+        <a href={props.albumurl}>
+          <div className="albumname">{props.albumname}</div>
+        </a>
+        <div className="artistcontainer">
+          {props.artists.map((artist) => {
+            return (
+              <Artist artist={artist} />
+            )
+          })}
+        </div>
+      </article>
+    </div>
   )
 }
-
-export default Album

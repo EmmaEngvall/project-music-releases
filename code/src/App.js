@@ -1,22 +1,23 @@
-import React from 'react';
-import data from './data.json';
-import Album from './components/Album'
 
-console.log(data);
+import React from 'react';
+import { Header } from 'components/Header';
+import { Album } from 'components/Album';
+import data from './data.json';
 
 export const App = () => {
   return (
     <div>
-      <h1>New albums & singles</h1>
+      <header>
+        <Header />
+      </header>
       <section className="albumcontainer">
         {data.albums.items.map((album) => {
           return (
             <Album
-              image={album.images[0].url}
+              image={album.images[1].url}
               albumname={album.name}
-              artistname={album.artists[0].name}
               albumurl={album.external_urls.spotify}
-              artisturl={album.artists[0].external_urls.spotify} />
+              artists={album.artists} />
           )
         })}
       </section>

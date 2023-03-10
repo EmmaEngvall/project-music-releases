@@ -1,0 +1,16 @@
+
+/*
+.artistcontainer:not(:first-child, :last-child)::before {
+    color: #a0a0a0;
+    content: ", ";
+  }
+
+.artistcontainer:last-child::before {
+    content: " & ";
+    color: #a0a0a0;
+  }
+
+.artistcontainer:only-child::before {content: "";}  
+*/
+
+

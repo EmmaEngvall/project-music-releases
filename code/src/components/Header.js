@@ -1,11 +1,6 @@
 import React from 'react';
+import './Header.css';
 
-const Header = () => {
-  return (
-    <div>
-      <h1>New Albums and Singles</h1>
-    </div>
-  );
-};
-
-export default Header;
+export const Header = () => {
+  return <h1>New albums &amp; singles</h1>;
+}
