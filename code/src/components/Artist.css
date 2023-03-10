@@ -13,4 +13,10 @@
 .artistcontainer:only-child::before {content: "";}  
 */
 
+.artistcontainer{
+  display: flex;
+  flex-direction: row;
+  gap:5px;
+}
+
 
