@@ -1,66 +1,64 @@
-/*Styling for icons and images*/
-.iconsContainer {
-    display: flex;
-    width: 80%;
-    /*opacity: 0;*/
-    position: absolute;
-    justify-content: space-around;
-    align-items: center;
-    top: 50%;
-    left: 50%;
-  }
-  
-  
-  .playicon {
-    width: 80px;
-    background-color: pink;
-    position: absolute;
-    top: calc(50% - 25px);
-    left: calc(50% - 25px); 
-  }
-  
-  .playicon:hover {
-    width: 100px;
-  }
-  
-  .hearticon {
-    width: 50px;
-    background-color: aqua;
-  }
-  
-  .dotsicon {
-    width: 50px;
-    height: 50px;
-    background-color: greenyellow;
-  }
 
-  .Icons {
-      width: 50px;
-      margin: 8px;
-      filter: invert(1);
-    }
+
+/*Styling for icons and images*/
+
+
+.iconsContainer {
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  justify-content:space-around;
+  align-items: center;
+  background: transparent;
+  gap: 25px;
+}
+
+.playicon {
+  width: 80px;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px); 
+
+}
+
+.playicon:hover {
+  width: 100px;
+}
+
+
+.dotsicon, .playicon, .hearticon {
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+  margin: 8px;
+}
+
+.dotsicon {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
+
+
+/* Hoover effects
+- Normal state: no hoover effects
   
+- Hover over album cover
+  - Darker image
+  - heart.svg
+  - play.svg
+  - dots.svg
+- Hover over play icon
+  - Faded image
+  - Growing heart.svg image
+  - play.svg
+  - dots.svg
+- Hover over album name
+  - Album name underlined
   
-  
-  
-  
-  
-  /* Hoover effects
-  - Normal state: no hoover effects
-    
-  - Hover over album cover
-    - Darker image
-    - heart.svg
-    - play.svg
-    - dots.svg
-  - Hover over play icon
-    - Faded image
-    - Growing heart.svg image
-    - play.svg
-    - dots.svg
-  - Hover over album name
-    - Album name underlined
-    
-  - Hover over artist name
-    - Artist name underlined
-    */
+- Hover over artist name
+  - Artist name underlined
+  */

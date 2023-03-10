@@ -1,19 +1,17 @@
 
 
 .headerContainer {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-h1 {
-  font-size: 20px;
+.Title {
+  font-size: 14px;
   color: white;
-  padding-left: 20px;
 }
 
 hr {
-  margin-left: 20px;
-  margin-right: 20px;
+ 
   border: none;
-  height: 1px;
+  height: 0.5px;
   background-color: rgb(86, 85, 85);
 }

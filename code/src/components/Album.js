@@ -8,9 +8,9 @@ export const Album = (props) => {
   return (
     <article className="albumcontainer">
       <div className="imgcontainer">
+        <Icons />
         <a href={props.albumurl}>
           <img className="album-img" src={props.image} alt="Album Cover" />
-          <Icons />
         </a>
       </div>
       <a href={props.albumurl}>

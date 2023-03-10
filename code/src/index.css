@@ -1,6 +1,6 @@
 
 body {
-  background-color: black;
+  background-color: rgb(16, 15, 15);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -14,12 +14,35 @@ code {
     monospace;
 }
 
-
-.wrapper {
-  display: grid;
-  gap: 20px;
-  flex-direction: column;
-  padding: 20px;
+.imgcontainer {
+  height: 200px;
+  width: 200px;
 }
 
 
+.wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Media queries */
+@media (min-width: 600px) and (max-width: 1024px) { 
+
+  .albumcontainer {
+    gap: 0% 1%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center
+  }
+}
+
+  @media (min-width: 1024px)  {
+    
+  .albumcontainer {
+    gap: 1%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+  }
+  }
